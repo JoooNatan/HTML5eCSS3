@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 8</title>
+    <style>
+        mark{
+            background-color:rgba(0, 102, 255, 0.61)
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase, temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
+    <p>Nesta frase, temos um <strong>termo em destaque</strong> usando tag STRONG (semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica)</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar um <mark>texto marcado</mark> usando a tag MARK.</p>
+    <p>E no outo parágrafo, temos <mark>outro texo marcado</mark> no final.</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas desconsiderado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar um ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica).</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo como x<sup>20</sup> + 3 (tag sup)</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo como H<sub>2</sub>O (tag sub)</p><br>
+    <h1>Outras formatações</h1>
+    <h2>Codigo fonte/Pre-formatação</h2>
+    <p>O comando <code>ducument.getElementById('Teste')</code> é escrito em linguagem JavaScript.(tag code)</p>
+    <p><pre>
+        <code>
+    num = int(input('Digite um numero'))
+    if num % 2 == 0:
+        print(f'O numero {num} é PAR')
+    else:
+        print(f'O numero {num} é IMPAR')
+    print('Fim do programa')                    (tag code + pre)
+        </code>
+    </pre>
+    </p>
+    <p><pre>
+    <code>
+    import java.util.Scanner;
+    public class Ex35 {
+        public static void main(String[] args) {
+            int tipoCarro, diasAlugado;
+            double precoTotal, precoKMs, precoDias, KMs;
+            Scanner s = new Scanner(System.in);
+
+            System.out.print("--------------Aluguel de carros--------------\n");
+            System.out.print("Qual o tipo de carro?\n1-carro popular\n2-carro de luxo\n");
+            tipoCarro = s.nextInt();
+            System.out.print("Quantos dias de aluguel? ");
+            diasAlugado = s.nextInt();
+            System.out.print("Quantos KM foram rodados? ");
+            KMs = s.nextInt();
+            if(tipoCarro == 1){
+                precoDias = diasAlugado * 90;
+                if(KMs < 100){
+                    precoKMs = KMs * 0.20;
+                }
+                else{
+                    precoKMs = KMs * 0.10;
+                }
+            }
+            else{
+                precoDias = diasAlugado * 150;
+                if(KMs < 200){
+                    precoKMs = KMs * 0.30;
+                }
+                else{
+                    precoKMs = KMs * 0.25;
+                }
+            }
+            precoTotal = precoDias + precoKMs;
+            System.out.printf("Preço total a ser pago: R$%.2f", precoTotal);
+        }
+    }
+        </code>
+    </pre>
+    </p>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rapido.</q> (tag q)</p>
+    <h2>Citações completas</h2>
+    <p>Turbina master power</p>
+    <blockquote cite = "https://www.rsperformance.com.br/MLB-1259008842-turbina-master-power-roletada-quente-48-fria-65-mono-fluxo-_JM?gclid=CjwKCAjwx7GYBhB7EiwA0d8oe7WQQoiN92zZMuU_hYAkDVZzpys3pT5EjGQvE613Z5yGaiQo8VKpXxoC2U0QAvD_BwE">Turbina Master Power Roletada Quente 48 Fria 65 Mono Fluxo (tag blockquote)</blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS   </abbr>.(tag abbr)</p>
+</body>
+</html>

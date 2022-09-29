@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tentar abrir o site em outro dispositivo ou dar zoom no site.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imgs/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgs/media.png" type="image/png">
+        <img src="imgs/grande.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Aprendendo a reproduzir audios em HTML5.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/phonk.mp3" type="audio/mpeg">
+    </audio><br>
+    <h1>Reproduzindo videos</h1>
+    <p>este vide esta hospedado no meu pc.</p>
+    <video width="560" poster="imgs/wallpaperflare.com_wallpaper2.jpg" controls>
+        <source src="midia/drift.mp4" type="video/mp4">
+        <source src="midia/drftmkv.mkv" type="video/mp4">
+        <p>Seu navegador não consegue reproduzir este tipo de arquivo.</p>
+    </video>
+    <h1>Videos do YouTube</h1>
+    <p>Este video esta hospedado no YouTube.</p>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1XR8DgMSjog" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <h1>Videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/3906944?h=82ec70ddf1&byline=0&portrait=0" width="560" height="420" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
