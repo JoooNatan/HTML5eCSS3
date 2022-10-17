@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+    margin: 0 auto;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+thead, tfoot {
+    background-color: gray;
+    color: white;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: gray;
+}
+
+tbody > tr:nth-child(even) {/* 2n */
+    background-color: lightgrey;
+}
+
+tbody > tr:nth-child(odd) {/* 2n - 1*/
+    background-color: white;
+}
+
+.num {
+    text-align: right;
+}
+
+.text {
+    width: 600px;
+    text-align: justify;
+    margin: auto;
+    padding: 20px;
+}
