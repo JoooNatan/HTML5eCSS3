@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando conteúdos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right,#2b20c9, #9323c7);
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        main {
+            background-color: white;
+            width: 750px;
+            margin: 0 auto;
+            box-shadow: -4px 2px 10px #00000079;
+        }
+
+        p {
+            width: 700px;
+            text-align: justify;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-top: 0px;
+            padding-top: 20px;
+        }
+
+        .iframe {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Conteúdos dentro de iframes</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veritatis suscipit, corrupti, quos enim provident repudiandae vitae architecto aliquam adipisci dignissimos quibusdam sed laboriosam fugit, et nisi esse officia eius? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, voluptatem fuga. Delectus, repudiandae laborum minima ducimus, nulla perspiciatis perferendis molestiae provident blanditiis obcaecati, cupiditate reiciendis explicabo ut soluta amet velit!</p>
+
+        <h2>Vídeos</h2>
+        <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/d9FK9a0cYxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Mapas</h2>
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2814.5285157750072!2d140.37053045069283!3d37.644468380428265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a9e8c7893f543%3A0x119f5b940725798b!2sEbisu%20Circuit!5e0!3m2!1spt-BR!2sbr!4v1671583163130!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h2>Mapas do Waze</h2>
+        <iframe class="iframe" src="https://embed.waze.com/iframe?zoom=16&lat=37.644857&lon=140.370865&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+    </main>
+</body>
+</html>
