@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pratica 01</title>
     <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Auto motor</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="auto.html">Drift</a>
-                
-            </nav>
+        <nav id="inav">
+            <div id="menu-btn">
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+            </div>
+            <h1>Auto motor</h1>
+            <ul id="imenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="auto.html">Drift</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <article>
@@ -27,5 +32,7 @@
     <footer>
         <p>Site feito por <a href="https://www.github.com/Jooonatan" target="_blank">João Natan</a> para praticar.</p>
     </footer>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
